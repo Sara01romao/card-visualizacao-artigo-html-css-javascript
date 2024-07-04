@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    border: 1px solid red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Manrope", sans-serif;
+    background-color: rgba(236, 242, 248, 1);
+    padding: 60px;
+
+}
+
+
+.card-artigo{
+    max-width: 730px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    
+    
+}
+
+.txt-artigo-container{
+    padding: 32px 40px;
+    border: 1px solid red;
+    position: relative;
+
+}
+
+.txt-artigo-container h2{
+    font-size: 20px;
+    font-weight: 700px;
+    color: rgba(72, 85, 106, 1);
+    margin-bottom: 12px;
+   
+    
+}
+
+.txt-artigo-container p{
+    font-size: 13px;
+    color: rgba(110, 128, 152, 1);
+   
+    
+}
+
+
+.img-artigo{
+    width: 285px;
+    height: 280px;
+    object-fit: cover;
+    object-position: bottom;
+   
+
+}
+
+
+.footer-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+    margin-top: 20px;
+    
+   
+    
+}
+
+
+.perfil-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.perfil-container h4{
+    color: rgba(72, 85, 106, 1) ;
+}
+
+
+.perfil-container p{
+    font-size: 13px;
+    color: rgba(110, 128, 152, 1);
+
+}
+
+.perfil-container img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+
+.compartilhar-container{
+    display: flex;
+    position: absolute;
+    background-color: rgba(72, 85, 106, 1);
+    padding: 18px 37px;
+    border-radius: 10px;
+    gap: 21px;
+    right: -58px;
+    bottom: 92px;
+} 
+
+.compartilhar-container::after{
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: rotate(180deg);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 12px solid rgba(72, 85, 106, 1);
+    
+}
+
+.compartilhar-icons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.btn-compartilhar{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(110, 128, 152, 1) ;
+}
+
+
+@media screen and (max-width:767px) {
+
+    .card-artigo{
+        flex-direction: column;
+    }
+    
+    .img-artigo{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: bottom;
+    
+    }
+     
+    .footer-card{
+        flex-direction: column;
+    }
+
+    .footer-card-compatilhar{
+        display: flex;
+        align-items: center;
+    }
+
+    .compartilhar-container{
+        position: inherit;
+    }
+
+    .compartilhar-container::after{
+        content: initial;
+    }
+}
