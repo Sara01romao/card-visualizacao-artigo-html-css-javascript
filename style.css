@@ -28,10 +28,14 @@ body{
 }
 
 .txt-artigo-container{
-    padding: 32px 40px;
+    
     border: 1px solid red;
     position: relative;
 
+}
+
+.txt-container{
+    padding: 32px 40px 0px;
 }
 
 .txt-artigo-container h2{
@@ -67,10 +71,10 @@ body{
     justify-content: space-between;
     border: 1px solid red;
     margin-top: 20px;
-    
+    padding: 0px 40px 20px;
    
-    
 }
+
 
 
 .perfil-container{
@@ -142,6 +146,12 @@ body{
 }
 
 
+
+
+
+
+
+
 @media screen and (max-width:767px) {
 
     .card-artigo{
@@ -156,13 +166,14 @@ body{
     
     }
      
-    .footer-card{
-        flex-direction: column;
-    }
+    
 
     .footer-card-compatilhar{
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0px 32px;
     }
 
     .compartilhar-container{
@@ -172,4 +183,35 @@ body{
     .compartilhar-container::after{
         content: initial;
     }
+
+
+    body{
+        padding: 10px;
+    }
+
+    .perfil-container{
+        padding: 0px 8px 20px 32px;
+        min-width: max-content;
+        border: 1px solid red;
+    }
+
+    .footer-card{
+        padding: 0px 0px 0px;
+        flex-wrap: wrap;
+    }
+
+
+    .footer-card-compatilhar.active{
+        width: 100%;
+        border-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: #48556a;
+        padding: 22px 32px;
+    }
+    
+    .footer-card-compatilhar.active .compartilhar-container{
+        padding: 0px;
+    }
+    
 }
