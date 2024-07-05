@@ -1,3 +1,9 @@
+:root{
+    --txt:#6E8098;
+    --grey-primary: #48556A;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -41,7 +47,7 @@ body{
 .txt-artigo-container h2{
     font-size: 20px;
     font-weight: 700px;
-    color: rgba(72, 85, 106, 1);
+    color: var(--grey-primary);
     margin-bottom: 12px;
    
     
@@ -49,7 +55,7 @@ body{
 
 .txt-artigo-container p{
     font-size: 13px;
-    color: rgba(110, 128, 152, 1);
+    color: var(--txt);
    
     
 }
@@ -84,7 +90,7 @@ body{
 }
 
 .perfil-container h4{
-    color: rgba(72, 85, 106, 1) ;
+    color: var(--grey-primary) ;
 }
 
 
@@ -101,15 +107,19 @@ body{
 }
 
 
-.compartilhar-container{
+.footer-card-compatilhar.active .compartilhar-container{
     display: flex;
+}
+
+.compartilhar-container{
+    display: none;
     position: absolute;
-    background-color: rgba(72, 85, 106, 1);
+    background-color: var(--grey-primary);
     padding: 18px 37px;
     border-radius: 10px;
     gap: 21px;
     right: -58px;
-    bottom: 92px;
+    bottom: 90px;
 } 
 
 .compartilhar-container::after{
@@ -124,7 +134,7 @@ body{
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom: 12px solid rgba(72, 85, 106, 1);
+    border-bottom: 12px solid var(--grey-primary);
     
 }
 
@@ -142,7 +152,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(110, 128, 152, 1) ;
+    background-color: #6E8098 ;
 }
 
 
@@ -200,6 +210,9 @@ body{
         flex-wrap: wrap;
     }
 
+    .compartilhar-container{
+        display: none;
+    }
 
     .footer-card-compatilhar.active{
         width: 100%;
@@ -209,9 +222,29 @@ body{
         background: #48556a;
         padding: 22px 32px;
     }
+
+
+    .footer-card-compatilhar.active  .compartilhar-container{
+        display: flex;
+    }
     
     .footer-card-compatilhar.active .compartilhar-container{
         padding: 0px;
+    }
+    
+}
+
+
+@media screen and (max-width:375px) {
+    .txt-container{
+        padding: 20px 20px 0px;
+    }
+    .perfil-container{
+        padding: 0px 8px 20px 20px;
+    }
+
+    .footer-card-compatilhar{
+        padding: 0px 20px 0px 0px;
     }
     
 }
