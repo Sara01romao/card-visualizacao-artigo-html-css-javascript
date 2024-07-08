@@ -81,6 +81,13 @@ body{
    
 }
 
+.footer-card-compatilhar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 
 .perfil-container{
@@ -88,6 +95,8 @@ body{
     align-items: center;
     gap: 20px;
 }
+
+
 
 .perfil-container h4{
     color: var(--grey-primary) ;
@@ -165,6 +174,8 @@ body{
         flex-direction: column;
     }
     
+
+
     .img-artigo{
         width: 100%;
         height: 200px;
@@ -173,20 +184,25 @@ body{
         border-radius: 10px 10px 0px 0px;
     
     }
+
+    .txt-container {
+        padding: 32px 32px 0px;
+    }
      
-    
 
     .footer-card-compatilhar{
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 20px;
-        padding: 0px 32px;
+        padding: 22px 32px;
+        transition: 0.3s ease;
         
     }
 
     .compartilhar-container{
         position: inherit;
+        background: initial;
     }
 
     .compartilhar-container::after{
@@ -199,7 +215,7 @@ body{
     }
 
     .perfil-container{
-        padding: 0px 8px 20px 32px;
+       
         min-width: max-content;
       
     }
@@ -220,6 +236,7 @@ body{
         border-bottom-right-radius: 10px;
         background: #48556a;
         padding: 22px 32px;
+        transition: 0.3s ease;
       
        
     }
@@ -233,16 +250,11 @@ body{
         padding: 0px;
     }
     
+    .footer-card:has(.footer-card-compatilhar.active) .perfil-container{
+        display: none;
+    }
 
-    .footer-card{
-        height: 60px;
-        transition: height 0.3s ease-out;
-    }
     
-    .footer-card:has(.footer-card-compatilhar.active){
-        height: 136px;
-        transition: height 0.3s linear;
-    }
     
 }
 
