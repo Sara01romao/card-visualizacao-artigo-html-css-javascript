@@ -17,7 +17,7 @@
 ## 💻  Sobre o Projeto
 Um layout moderno e responsivo para cards de artigos, ideal para blogs, notícias, e páginas de portfólio. 
 
-<a href="https://sara01romao.github.io/card-visualizacao-artigo" target="_blank"><strong>Acessar Desafio »</strong></a>
+<a href="https://sara01romao.github.io/card-visualizacao-artigo-html-css-javascript/" target="_blank"><strong>Acessar Desafio »</strong></a>
 
 <br>
 
