@@ -7,6 +7,7 @@
 
 
   <img max-width="auto" height="auto"  src="https://github.com/Sara01romao/card-visualizacao-artigo/assets/46323667/73e0ea31-c3bc-4c3a-9bfd-e42cdc388025">
+  
 
 </p> 
 
@@ -17,7 +18,8 @@
 ## 💻  Sobre o Projeto
 Um layout moderno e responsivo para cards de artigos, ideal para blogs, notícias, e páginas de portfólio. 
 
-<a href="https://sara01romao.github.io/card-visualizacao-artigo-html-css-javascript/" target="_blank"><strong>Acessar Desafio »</strong></a>
+<a href="https://sara01romao.github.io/card-visualizacao-artigo-html-css-javascript/" target="_blank"><strong> Acessar  »</strong></a>
+
 
 <br>
 
